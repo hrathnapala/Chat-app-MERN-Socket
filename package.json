@@ -22,6 +22,7 @@
     },
     "homepage": "https://github.com/hrathnapala/Chat-app-MERN-Socket#readme",
     "dependencies": {
+        "cors": "^2.8.5",
         "dotenv": "^11.0.0",
         "express": "^4.17.2"
     },

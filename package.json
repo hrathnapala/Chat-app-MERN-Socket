@@ -19,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/hrathnapala/Chat-app-MERN-Socket/issues"
   },
-  "homepage": "https://github.com/hrathnapala/Chat-app-MERN-Socket#readme"
+  "homepage": "https://github.com/hrathnapala/Chat-app-MERN-Socket#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }

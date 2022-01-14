@@ -1,29 +1,30 @@
 {
-  "name": "chat-app-mern-socket",
-  "version": "1.0.0",
-  "description": "Chat app with full functionalities",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hrathnapala/Chat-app-MERN-Socket.git"
-  },
-  "keywords": [
-    "MERN",
-    "SOCKET"
-  ],
-  "author": "Heshan Rathnapala",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hrathnapala/Chat-app-MERN-Socket/issues"
-  },
-  "homepage": "https://github.com/hrathnapala/Chat-app-MERN-Socket#readme",
-  "dependencies": {
-    "express": "^4.17.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+    "name": "chat-app-mern-socket",
+    "version": "1.0.0",
+    "description": "Chat app with full functionalities",
+    "main": "server.js",
+    "scripts": {
+        "start": "node ./backend/server.js",
+        "dev": "nodemon ./backend/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hrathnapala/Chat-app-MERN-Socket.git"
+    },
+    "keywords": [
+        "MERN",
+        "SOCKET"
+    ],
+    "author": "Heshan Rathnapala",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hrathnapala/Chat-app-MERN-Socket/issues"
+    },
+    "homepage": "https://github.com/hrathnapala/Chat-app-MERN-Socket#readme",
+    "dependencies": {
+        "express": "^4.17.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
 }

@@ -3,22 +3,26 @@ const dotenv = require("dotenv");
 const cors = require("cors");
 
 const app = express();
+
+app.use(cors());
+app.use(express.json());
+
 dotenv.config();
 
 const { chats } = require("./data/data");
+const connectDB = require("./config/db");
+const { notFound, errorHandler } = require("./middleware/errorMiddleware");
+
+connectDB();
 
 app.get("/", (req, res) => {
   res.send("Invalid Endpoint");
 });
 
-app.get("/api/chats", (req, res) => {
-  res.send(chats);
-});
+app.use("/api/user", require("./routes/userRoute"));
 
-app.get("/api/chats/:id", (req, res) => {
-  const chat = chats.find((c) => c._id === req.params.id);
-  res.send(chat);
-});
+app.use(notFound);
+app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
 
